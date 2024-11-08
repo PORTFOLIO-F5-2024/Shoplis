@@ -110,6 +110,6 @@ Si deseas contribuir al proyecto:
 
 ## 👥 Autores
 
-Paula Calvo ![https://www.linkedin.com/in/paulacalvogarcia2001/]( icons8-linkedin-48.png.url "Logo linkedIn")
+Paula Calvo ![https://www.linkedin.com/in/paulacalvogarcia2001/]( icons8-linkedin-48.png "Logo linkedIn")
 ## 📜 Licencia
 Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE para más detalles.
