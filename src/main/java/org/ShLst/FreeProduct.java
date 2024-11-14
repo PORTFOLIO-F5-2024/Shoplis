@@ -1,18 +1,21 @@
 package org.ShLst;
 
-public class FreeProduct extends Product{
+public class FreeProduct extends Product implements WithDiscount {
 
     private double discount;
+
     public FreeProduct(String nameProduct, double priceProduct) {
         super(nameProduct, priceProduct);
         this.discount = 100;
     }
 
-    @Override
-    public double getApplyDiscount() {
-        double priceProduct = this.getPriceProduct();
-        double discount = this.discount;
-        setPriceProduct(priceProduct - priceProduct*discount/100);
-        return priceProduct - priceProduct*discount/100;
+    public double getDiscount() {
+        return discount;
     }
+
+    @Override
+    public double getApplyDiscount(double priceProduct, double discount) {
+        return priceProduct + priceProduct * discount / 100;
+    }
+
 }

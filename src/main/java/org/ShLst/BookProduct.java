@@ -1,6 +1,6 @@
 package org.ShLst;
 
-public class BookProduct extends Product{
+public class BookProduct extends Product implements WithDiscount{
     private String author;
     private String description;
     private double discount;
@@ -12,17 +12,19 @@ public class BookProduct extends Product{
         this.discount = discount;
     }
 
+    public double getDiscount() {
+        return discount;
+    }
+
     @Override
-    public double getApplyDiscount() {
+    public double getApplyDiscount(double priceProduct, double discount) {
         if (this.discount > 10) {
-            System.out.println("Discount ");
+            System.out.println("Discount is not effective, its over 10% ");
             this.discount = 0;
             return 0;
         }
 
-        double priceProduct = this.getPriceProduct();
-        double discount = this.discount;
         return priceProduct - priceProduct*discount/100;
-
     }
+
 }

@@ -40,11 +40,11 @@ public class Cart {
             switch (typeOf){
                 case "FoodProduct":
                     FoodProduct itemFood = (FoodProduct) productsCart.get(i);
-                    priceSumToTotal = itemFood.getApplyDiscount();
+                    priceSumToTotal = itemFood.getApplyDiscount(itemFood.getPriceProduct(), itemFood.getDiscount());
                     break;
                 case "BookProduct":
                     BookProduct itemBook = (BookProduct) productsCart.get(i);
-                    priceSumToTotal = itemBook.getApplyDiscount();
+                    priceSumToTotal = itemBook.getApplyDiscount(itemBook.getPriceProduct(), itemBook.getDiscount());
                     break;
             }
             totalPriceCart += priceSumToTotal;

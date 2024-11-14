@@ -21,7 +21,5 @@ public abstract class Product {
         PriceProduct = priceProduct;
     }
 
-    public abstract double getApplyDiscount();
-
 
 }
