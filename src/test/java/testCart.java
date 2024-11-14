@@ -1,16 +1,20 @@
-import org.ShLst.Cart;
+import org.ShLst.Product;
 import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static  org.junit.jupiter.api.Assertions.assertEquals;
 
 public class testCart {
+    private List<Product> productsCart = new ArrayList<>();
 
     @Test
-    @DisplayName("Test lista usuarios mayores de edad")
-    void test_whenTheUserAgeIsOver18_thenReturnArrayOver18(){
-
+    @DisplayName("Test: view list cart")
+    void test_whenViewCartMethod_thenReturnAlistOfCartProducts(){
+        //  GIVEN
+        // WHEN
+        //  THEN
     }
-
-
-
 }
